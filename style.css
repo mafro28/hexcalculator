@@ -1,0 +1,29 @@
+body {
+    margin: 250px 50px 0px 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    border: 3px solid black;
+
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+p {
+    color: rgb(132, 4, 252);
+}
+
+/* Button styling */
+button {
+    margin-bottom: 30px;
+    background-color: rgb(24, 24, 24);
+    color: gainsboro;
+    font-size: 0.7em;
+}
+
+/* Mouse cursor changes to pointing hand on hover of button*/
+button:hover {
+    cursor: pointer;
+}
