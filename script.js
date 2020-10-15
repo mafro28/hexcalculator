@@ -10,7 +10,7 @@ function menu() {
 
 
     do {
-        var choice = prompt("Enter 1 to continue to Hexadecimal calculator or 2 to quit"); // local variable used to hold prompt choice input
+        let choice = prompt("Enter 1 to continue to Hexadecimal calculator or 2 to quit"); // local variable used to hold prompt choice input
 
         console.log("Your choice is " + choice); // Shows the menu choice in the browser console
 
@@ -36,8 +36,8 @@ function menu() {
 
 function hexCalculate() {
 
-    var hex1 = get_hex("Please enter the first hex number"); // Local variable passing in "Please enter first hex number" as a parameter into get_pad()
-    var hex2 = get_hex("Please enter the second hex number"); // Local variable passing in "Please enter second hex number" as a parameter into get_pad()
+    let hex1 = get_hex("Please enter the first hex number"); // Local variable passing in "Please enter first hex number" as a parameter into get_pad()
+    let hex2 = get_hex("Please enter the second hex number"); // Local variable passing in "Please enter second hex number" as a parameter into get_pad()
 
     console.log("Your first number is " + hex1); // Shows the first number from the prompt input to the browser console
     console.log("Your second number is " + hex2); // Shows the second number from the prompt input to the browser console
@@ -64,7 +64,7 @@ function hexCalculate() {
 
 function get_hex(message) {
 
-    var hexString = ""; // Local variable set as an empty string
+    let hexString = ""; // Local variable set as an empty string
 
     do {
         hexString = prompt(message); // Local variable passing in parameter message into prompt()
@@ -97,10 +97,10 @@ function pad(string, numLength) {
 // Function to split numbers into array
 
 function hex_add(hex1, hex2) {
-    var string1 = hex1.split(""); // Local variable assigning hex1.split("") to string1
-    var string2 = hex2.split(""); // Local variable assigning hex2.split("") to string2
-    var partialResult = hex1.split(""); // Local variable storing hex1.split("") to partialResult
-    var carry = 0; // Local variable  initialising carry to 0
+    let string1 = hex1.split(""); // Local variable assigning hex1.split("") to string1
+    let string2 = hex2.split(""); // Local variable assigning hex2.split("") to string2
+    let partialResult = hex1.split(""); // Local variable storing hex1.split("") to partialResult
+    let carry = 0; // Local variable  initialising carry to 0
 
     for (i = partialResult.length - 1; i >= 0; i--) {
         char1 = map_hex_to_dec(string1[i]); // Local variable storing map_hex_to_dec(string1[i]) as char1
@@ -126,7 +126,7 @@ function hex_add(hex1, hex2) {
 // Function to check if input characters are within the valid range
 
 function notValid(string) {
-    var valid = true; // Local variable setting valid to true
+    let valid = true; // Local variable setting valid to true
     for (i = 0; i < string.length - 1; i++) {
         charCheck = string.charAt(i); // Local variable that gets the current character from the string using charAt()
         validChars = "0123456789ABCDEF"; // Local variable of a string for only the valid characters accepted
